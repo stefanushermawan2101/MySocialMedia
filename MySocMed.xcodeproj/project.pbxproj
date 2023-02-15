@@ -21,9 +21,15 @@
 		721A9F6B299B864500EC1E2D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721A9F6A299B864500EC1E2D /* LoginViewController.swift */; };
 		721A9F6D299B86D900EC1E2D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721A9F6C299B86D900EC1E2D /* RegistrationViewController.swift */; };
 		721A9F6F299B8C9900EC1E2D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721A9F6E299B8C9900EC1E2D /* Utilities.swift */; };
+		72784F23299CB5FE00520A2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72784F22299CB5FE00520A2C /* GoogleService-Info.plist */; };
+		72784F25299CCA3F00520A2C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72784F24299CCA3F00520A2C /* Constants.swift */; };
+		72784F27299CDA6F00520A2C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72784F26299CDA6F00520A2C /* AuthService.swift */; };
+		A821C0AF2EA61A5830DEBF2E /* Pods_MySocMed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692421E7EEB6155927A51C7F /* Pods_MySocMed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		692421E7EEB6155927A51C7F /* Pods_MySocMed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySocMed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		720CD1AA656C6B1D0DC678F2 /* Pods-MySocMed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySocMed.debug.xcconfig"; path = "Target Support Files/Pods-MySocMed/Pods-MySocMed.debug.xcconfig"; sourceTree = "<group>"; };
 		721A9F40299B6A0A00EC1E2D /* MySocMed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySocMed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		721A9F43299B6A0A00EC1E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		721A9F45299B6A0A00EC1E2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +46,10 @@
 		721A9F6A299B864500EC1E2D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		721A9F6C299B86D900EC1E2D /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		721A9F6E299B8C9900EC1E2D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		72784F22299CB5FE00520A2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		72784F24299CCA3F00520A2C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		72784F26299CDA6F00520A2C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		D34FB6AAD87823C93275371B /* Pods-MySocMed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySocMed.release.xcconfig"; path = "Target Support Files/Pods-MySocMed/Pods-MySocMed.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A821C0AF2EA61A5830DEBF2E /* Pods_MySocMed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3205D006008BFFF1B25FEC1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				692421E7EEB6155927A51C7F /* Pods_MySocMed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BBCA7101379ABFD2FD01880 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				720CD1AA656C6B1D0DC678F2 /* Pods-MySocMed.debug.xcconfig */,
+				D34FB6AAD87823C93275371B /* Pods-MySocMed.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		721A9F37299B6A0A00EC1E2D = {
 			isa = PBXGroup;
 			children = (
 				721A9F42299B6A0A00EC1E2D /* MySocMed */,
 				721A9F41299B6A0A00EC1E2D /* Products */,
+				6BBCA7101379ABFD2FD01880 /* Pods */,
+				3205D006008BFFF1B25FEC1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +111,7 @@
 				721A9F43299B6A0A00EC1E2D /* AppDelegate.swift */,
 				721A9F4C299B6A0C00EC1E2D /* Assets.xcassets */,
 				721A9F51299B6A0C00EC1E2D /* Info.plist */,
+				72784F22299CB5FE00520A2C /* GoogleService-Info.plist */,
 				721A9F4E299B6A0C00EC1E2D /* LaunchScreen.storyboard */,
 				721A9F49299B6A0A00EC1E2D /* Main.storyboard */,
 				721A9F45299B6A0A00EC1E2D /* SceneDelegate.swift */,
@@ -107,6 +138,7 @@
 			children = (
 				721A9F67299B7ED600EC1E2D /* Extensions.swift */,
 				721A9F6E299B8C9900EC1E2D /* Utilities.swift */,
+				72784F24299CCA3F00520A2C /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -114,6 +146,7 @@
 		721A9F5A299B6A9300EC1E2D /* API */ = {
 			isa = PBXGroup;
 			children = (
+				72784F26299CDA6F00520A2C /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -154,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 721A9F54299B6A0C00EC1E2D /* Build configuration list for PBXNativeTarget "MySocMed" */;
 			buildPhases = (
+				7034BE11A1918D31704526AB /* [CP] Check Pods Manifest.lock */,
 				721A9F3C299B6A0A00EC1E2D /* Sources */,
 				721A9F3D299B6A0A00EC1E2D /* Frameworks */,
 				721A9F3E299B6A0A00EC1E2D /* Resources */,
+				BF2D9ECD25D21C9C48550A59 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,10 +243,53 @@
 				721A9F50299B6A0C00EC1E2D /* LaunchScreen.storyboard in Resources */,
 				721A9F4D299B6A0C00EC1E2D /* Assets.xcassets in Resources */,
 				721A9F4B299B6A0A00EC1E2D /* Main.storyboard in Resources */,
+				72784F23299CB5FE00520A2C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7034BE11A1918D31704526AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySocMed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF2D9ECD25D21C9C48550A59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySocMed/Pods-MySocMed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySocMed/Pods-MySocMed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySocMed/Pods-MySocMed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		721A9F3C299B6A0A00EC1E2D /* Sources */ = {
@@ -224,11 +302,13 @@
 				721A9F66299B6F5400EC1E2D /* ConversationsController.swift in Sources */,
 				721A9F44299B6A0A00EC1E2D /* AppDelegate.swift in Sources */,
 				721A9F6D299B86D900EC1E2D /* RegistrationViewController.swift in Sources */,
+				72784F27299CDA6F00520A2C /* AuthService.swift in Sources */,
 				721A9F68299B7ED600EC1E2D /* Extensions.swift in Sources */,
 				721A9F62299B6F0000EC1E2D /* ExploreController.swift in Sources */,
 				721A9F46299B6A0A00EC1E2D /* SceneDelegate.swift in Sources */,
 				721A9F5E299B6D3D00EC1E2D /* MainTabController.swift in Sources */,
 				721A9F60299B6EB400EC1E2D /* FeedController.swift in Sources */,
+				72784F25299CCA3F00520A2C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +450,7 @@
 		};
 		721A9F55299B6A0C00EC1E2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 720CD1AA656C6B1D0DC678F2 /* Pods-MySocMed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -397,6 +478,7 @@
 		};
 		721A9F56299B6A0C00EC1E2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D34FB6AAD87823C93275371B /* Pods-MySocMed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
