@@ -24,6 +24,8 @@
 		72784F23299CB5FE00520A2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72784F22299CB5FE00520A2C /* GoogleService-Info.plist */; };
 		72784F25299CCA3F00520A2C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72784F24299CCA3F00520A2C /* Constants.swift */; };
 		72784F27299CDA6F00520A2C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72784F26299CDA6F00520A2C /* AuthService.swift */; };
+		72784F29299DBA6C00520A2C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72784F28299DBA6C00520A2C /* UserService.swift */; };
+		72784F2B299DBE3600520A2C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72784F2A299DBE3600520A2C /* User.swift */; };
 		A821C0AF2EA61A5830DEBF2E /* Pods_MySocMed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692421E7EEB6155927A51C7F /* Pods_MySocMed.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		72784F22299CB5FE00520A2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		72784F24299CCA3F00520A2C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		72784F26299CDA6F00520A2C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		72784F28299DBA6C00520A2C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		72784F2A299DBE3600520A2C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D34FB6AAD87823C93275371B /* Pods-MySocMed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySocMed.release.xcconfig"; path = "Target Support Files/Pods-MySocMed/Pods-MySocMed.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +126,7 @@
 		721A9F57299B6A6100EC1E2D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				72784F2A299DBE3600520A2C /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				72784F26299CDA6F00520A2C /* AuthService.swift */,
+				72784F28299DBA6C00520A2C /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72784F29299DBA6C00520A2C /* UserService.swift in Sources */,
 				721A9F6B299B864500EC1E2D /* LoginViewController.swift in Sources */,
 				721A9F64299B6F2B00EC1E2D /* NotificationsController.swift in Sources */,
 				721A9F6F299B8C9900EC1E2D /* Utilities.swift in Sources */,
@@ -303,6 +310,7 @@
 				721A9F44299B6A0A00EC1E2D /* AppDelegate.swift in Sources */,
 				721A9F6D299B86D900EC1E2D /* RegistrationViewController.swift in Sources */,
 				72784F27299CDA6F00520A2C /* AuthService.swift in Sources */,
+				72784F2B299DBE3600520A2C /* User.swift in Sources */,
 				721A9F68299B7ED600EC1E2D /* Extensions.swift in Sources */,
 				721A9F62299B6F0000EC1E2D /* ExploreController.swift in Sources */,
 				721A9F46299B6A0A00EC1E2D /* SceneDelegate.swift in Sources */,
